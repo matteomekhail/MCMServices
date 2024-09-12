@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
                         >
-                            Luxury cleaning for exclusive residences, prestigious offices, and elite commercial spaces.
+                            We offer luxury cleaning services for exclusive residences, prestigious offices, and elite commercial spaces in Sydney. Our expert team is ready to meet your most sophisticated cleaning needs with precision, care, and high-quality eco-friendly products.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
                             transition={{ delay: 0.6, duration: 0.8 }}
                         >
                             <Button className="bg-orange-500 text-white hover:bg-orange-600 text-lg px-8 py-4 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                                Request a Quote
+                                Request a Tailored Quote
                             </Button>
                         </motion.div>
                     </motion.div>
@@ -53,8 +53,8 @@ const HeroSection: React.FC = () => {
                                 transition={{ delay: 0.2, duration: 0.8 }}
                             ></motion.div>
                             <motion.img
-                                src="/img/pulitore.jpg"
-                                alt="Cleaning service"
+                                src="/img/Specchio.jpg"
+                                alt="Premium cleaning service"
                                 className="relative z-10 rounded-3xl shadow-2xl w-full h-auto object-cover"
                                 initial={{ scale: 0.8 }}
                                 animate={{ scale: 1 }}
