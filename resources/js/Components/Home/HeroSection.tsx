@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
                                 transition={{ delay: 0.2, duration: 0.8 }}
                             ></motion.div>
                             <motion.img
-                                src="/img/Specchio.jpg"
+                                src="/img/pulitore.jpg"
                                 alt="Premium cleaning service"
                                 className="relative z-10 rounded-3xl shadow-2xl w-full h-auto object-cover"
                                 initial={{ scale: 0.8 }}
