@@ -25,7 +25,7 @@ const ServicesSection = () => {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-light text-center mb-16 text-blue-800">I Nostri Servizi Premium</h2>
+                <h2 className="text-4xl font-light text-center mb-16 text-blue-800">Our Premium Services</h2>
                 <div className="flex flex-col lg:flex-row">
                     <div className="lg:w-1/3 mb-8 lg:mb-0">
                         {services.map((service, index) => (

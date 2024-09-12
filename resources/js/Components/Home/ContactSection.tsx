@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -24,10 +24,10 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 text-black overflow-hidden">
+    <section className="py-12 md:py-24 text-black overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-5xl font-extrabold text-center mb-16 text-[#0047AB]" 
+          className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-[#0047AB]" 
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -36,34 +36,38 @@ const ContactSection: React.FC = () => {
         </motion.h2>
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <motion.div 
-            className="lg:w-1/2 mb-12 lg:mb-0"
+            className="w-full lg:w-1/2 mb-8 lg:mb-0"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-semibold mb-8 text-[#0047AB]">We're Here for You</h3>
-            <div className="space-y-6">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-[#0047AB]">We're Here for You</h3>
+            <div className="space-y-4">
               <div className="flex items-center">
-                <FaEnvelope className="text-2xl mr-4 text-[#FF6600]" /> 
-                <p>info@mcmprogroup.com</p>
+                <FaEnvelope className="text-xl md:text-2xl mr-3 text-[#FF6600]" /> 
+                <a href="mailto:info@mcmprogroup.com" className="text-sm md:text-base hover:text-[#FF6600] transition-colors">
+                  info@mcmprogroup.com
+                </a>
               </div>
               <div className="flex items-center">
-                <FaPhone className="text-2xl mr-4 text-[#FF6600]" /> 
-                <p>+61 450 770 286</p>
+                <FaPhone className="text-xl md:text-2xl mr-3 text-[#FF6600]" /> 
+                <a href="tel:+61450770286" className="text-sm md:text-base hover:text-[#FF6600] transition-colors">
+                  +61 450 770 286
+                </a>
               </div>
             </div>
           </motion.div>
           <motion.div 
-            className="lg:w-1/2 relative"
+            className="w-full lg:w-1/2 relative"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="absolute inset-0 bg-[#FF6600] opacity-50 rounded-lg transform -rotate-6"></div>
-            <div className="absolute inset-0 bg-[#0047AB] opacity-50 rounded-lg transform rotate-6"></div>
-            <form onSubmit={handleSubmit} className="relative bg-white rounded-lg p-8 shadow-xl">
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+            <div className="absolute inset-0 bg-[#FF6600] opacity-50 rounded-lg transform -rotate-3 md:-rotate-6"></div>
+            <div className="absolute inset-0 bg-[#0047AB] opacity-50 rounded-lg transform rotate-3 md:rotate-6"></div>
+            <form onSubmit={handleSubmit} className="relative bg-white rounded-lg p-6 md:p-8 shadow-xl">
+              <div className="mb-4 md:mb-6">
+                <label htmlFor="name" className="block text-sm font-medium mb-1 md:mb-2">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -100,7 +104,7 @@ const ContactSection: React.FC = () => {
               </div>
               <motion.button
                 type="submit"
-                className="w-full bg-[#0047AB] hover:bg-[#003380] text-white font-bold py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                className="w-full bg-[#0047AB] hover:bg-[#003380] text-white font-bold py-2 md:py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
