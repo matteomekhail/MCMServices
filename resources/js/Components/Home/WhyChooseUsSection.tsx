@@ -56,7 +56,7 @@ const WhyChooseUsSection: React.FC = () => {
     <section ref={ref} className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-900"
           initial="hidden"
           animate={controls}
           variants={{
@@ -82,7 +82,7 @@ const WhyChooseUsSection: React.FC = () => {
   {reasons.map((reason, index) => (
     <motion.div
       key={index}
-      className={`mb-8 cursor-pointer ${activeIndex === index ? 'text-blue-600' : 'text-gray-600'}`}
+      className={`mb-8 cursor-pointer ${activeIndex === index ? 'text-orange-500' : 'text-blue-900'}`}
       onClick={() => setActiveIndex(index)}
       // Rimuoviamo whileHover e whileTap
     >
@@ -113,8 +113,8 @@ const WhyChooseUsSection: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="text-center">
-                  <span className="text-6xl md:text-8xl font-bold text-blue-600">{reason.statistic.split(' ')[0]}</span>
-                  <p className="text-xl md:text-2xl text-gray-600 mt-4">{reason.statistic.split(' ').slice(1).join(' ')}</p>
+                  <span className="text-6xl md:text-8xl font-bold text-orange-500">{reason.statistic.split(' ')[0]}</span>
+                  <p className="text-xl md:text-2xl text-blue-900 mt-4">{reason.statistic.split(' ').slice(1).join(' ')}</p>
                 </div>
               </motion.div>
             ))}

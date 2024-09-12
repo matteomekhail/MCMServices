@@ -16,7 +16,6 @@ const Navbar = () => {
           <img src="/img/logo.png" alt="MCM Services Logo" className="h-24" />
         </Link>
         <ul className="hidden md:flex space-x-4">
-          <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact</Link></li>

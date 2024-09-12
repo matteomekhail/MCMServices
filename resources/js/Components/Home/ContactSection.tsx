@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
     <section className="py-24 text-black overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-5xl font-extrabold text-center mb-16"
+          className="text-5xl font-extrabold text-center mb-16 text-[#0047AB]" 
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -41,31 +41,27 @@ const ContactSection: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-semibold mb-8">We're Here for You</h3>
+            <h3 className="text-3xl font-semibold mb-8 text-[#0047AB]">We're Here for You</h3>
             <div className="space-y-6">
               <div className="flex items-center">
-                <FaEnvelope className="text-2xl mr-4 text-blue-400" />
-                <p>info@yourcompany.com</p>
+                <FaEnvelope className="text-2xl mr-4 text-[#FF6600]" /> 
+                <p>info@mcmprogroup.com</p>
               </div>
               <div className="flex items-center">
-                <FaPhone className="text-2xl mr-4 text-blue-400" />
-                <p>+1 (123) 456-7890</p>
-              </div>
-              <div className="flex items-center">
-                <FaMapMarkerAlt className="text-2xl mr-4 text-blue-400" />
-                <p>123 Example St, New York, NY 10001, USA</p>
+                <FaPhone className="text-2xl mr-4 text-[#FF6600]" /> 
+                <p>+61 450 770 286</p>
               </div>
             </div>
           </motion.div>
-<motion.div 
-  className="lg:w-1/2 relative"
-  initial={{ opacity: 0, x: 100 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8, delay: 0.4 }}
->
-  <div className="absolute inset-0 bg-blue-200 opacity-50 rounded-lg transform -rotate-6"></div>
-  <div className="absolute inset-0 bg-blue-100 opacity-50 rounded-lg transform rotate-6"></div>
-  <form onSubmit={handleSubmit} className="relative bg-white rounded-lg p-8 shadow-xl">
+          <motion.div 
+            className="lg:w-1/2 relative"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <div className="absolute inset-0 bg-[#FF6600] opacity-50 rounded-lg transform -rotate-6"></div>
+            <div className="absolute inset-0 bg-[#0047AB] opacity-50 rounded-lg transform rotate-6"></div>
+            <form onSubmit={handleSubmit} className="relative bg-white rounded-lg p-8 shadow-xl">
               <div className="mb-6">
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
                 <input
@@ -104,7 +100,7 @@ const ContactSection: React.FC = () => {
               </div>
               <motion.button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                className="w-full bg-[#0047AB] hover:bg-[#003380] text-white font-bold py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
